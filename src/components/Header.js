@@ -1,32 +1,38 @@
 // Header.js
-import React from 'react';
+import React from "react";
 
 function Header() {
   return (
-    <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
-      <div className="container">
-        <a className="navbar-brand" href="#">My Portfolio</a>
-        <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span className="navbar-toggler-icon"></span>
-        </button>
-        <div className="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul className="navbar-nav ml-auto">
-            <li className="nav-item">
-              <a className="nav-link" href="#about">About</a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link" href="#skills">Skills</a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link" href="#projects">Projects</a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link" href="#contact">Contact</a>
-            </li>
-          </ul>
+    <>
+      {/* <!--===Home Section Start===--> */}
+      <section class="home section" id="home">
+        <div class="container">
+          <div class="row">
+            <div class="home-info padd-15">
+              <h3 class="hello">
+                Hello, my name is <span class="owner-name">Ye Zaw Htet</span>
+              </h3>
+              <h3 class="my-profession">
+                I' m a <span class="typing">Web Developer</span>
+              </h3>
+              <p>
+                I had Studied at NVL University and got 2 Diploma and
+                B.Sc(Hons)BCIS Bachelor Degree from University of Central
+                Lancashire at UK. I'm developing websites starting from 2021.
+                Welcome projects from you...
+              </p>
+              <a href="#contact" class="btn hire-me btn-background-slide">
+                Hire Me
+              </a>
+            </div>
+            <div class="home-img padd-15" style={{ borderRadius: "5rem" }}>
+              <img src="img/profile.png" alt="Profile" />
+            </div>
+          </div>
         </div>
-      </div>
-    </nav>
+      </section>
+      {/* <!--===Home Section End===--> */}
+    </>
   );
 }
 
