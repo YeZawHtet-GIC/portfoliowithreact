@@ -102,7 +102,7 @@ function About() {
                   <div className="buttons padd-15">
                     {/* <!--https://drive.google.com/file/d/15ZR86-i7xKn11w9bY8LeCW7Wf7oQ8U68/view?usp=drive_link--> */}
                     <a
-                      href="img/Ye Zaw Htet CV.pdf"
+                      href={require("../img/Ye Zaw Htet CV.pdf")}
                       className="btn  btn-background-slide"
                       download
                     >

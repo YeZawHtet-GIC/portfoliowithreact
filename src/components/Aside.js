@@ -1,44 +1,87 @@
-import React from "react";
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 export default function Aside() {
+  const [isAsideActive, setIsAsideActive] = useState(false);
+  const [activeLink, setActiveLink] = useState("home");
+
+  const toggleAside = () => {
+    setIsAsideActive(!isAsideActive);
+  };
+
+  const handleAsideClick = () => {
+    setIsAsideActive(false);
+  };
+
+  const handleLinkClick = (section) => {
+    setActiveLink(section);
+  };
+
   return (
     <>
       {/* <!--====== Aside Start ======--> */}
-      <div className="aside">
+      <div
+        className={`aside ${isAsideActive ? "active" : ""}`}
+        onClick={handleAsideClick}
+      >
         <div className="logo">
-          <a href="#">
+          <Link to="/">
             <span>D</span>anny
-          </a>
+          </Link>
         </div>
         <ul className="nav">
           <li className="lihome" data-section="home">
-            <a href="#home" className="nav-link active">
+            <Link
+              to="Home"
+              className={`nav-link ${activeLink === "home" ? "active" : ""}`}
+              onClick={() => handleLinkClick("home")}
+            >
               <i className="fa fa-home"></i>Home
-            </a>
+            </Link>
           </li>
           <li className="liabout" data-section="about">
-            <a href="#about" className="nav-link">
+            <Link
+              to="About"
+              className={`nav-link ${activeLink === "about" ? "active" : ""}`}
+              onClick={() => handleLinkClick("about")}
+            >
               <i className="fa fa-user"></i>About
-            </a>
+            </Link>
           </li>
           <li className="liservices" data-section="services">
-            <a href="#services" className="nav-link">
+            <Link
+              to="Services"
+              className={`nav-link ${
+                activeLink === "services" ? "active" : ""
+              }`}
+              onClick={() => handleLinkClick("services")}
+            >
               <i className="fa fa-list"></i>Services
-            </a>
+            </Link>
           </li>
           <li className="liportfolio" data-section="portfolio">
-            <a href="#portfolio" className="nav-link">
-              <i className="fa fa-briefcase"></i>Portfolio
-            </a>
+            <Link
+              to="projects"
+              className={`nav-link ${
+                activeLink === "portfolio" ? "active" : ""
+              }`}
+              onClick={() => handleLinkClick("portfolio")}
+            >
+              <i className="fa fa-briefcase"></i>Projects
+            </Link>
           </li>
           <li className="licontact" data-section="contact">
-            <a href="#contact" className="nav-link">
+            <Link
+              to="contact"
+              className={`nav-link ${activeLink === "contact" ? "active" : ""}`}
+              onClick={() => handleLinkClick("contact")}
+            >
               <i className="fa fa-comments"></i>Contact
-            </a>
+            </Link>
           </li>
         </ul>
       </div>
-      <div className="nav-toggler">
+      <div className="nav-toggler" onClick={toggleAside}>
         <div className="bar"></div>
         <div className="bar"></div>
         <div className="bar"></div>

@@ -1,8 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App";
-//bootstrap
-import "bootstrap/dist/css/bootstrap.min.css";
 //rrd
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import About from "./components/About";
@@ -10,6 +8,7 @@ import Contact from "./components/Contact";
 import Projects from "./components/Projects";
 import Service from "./components/Service";
 import Home from "./components/Home";
+import Hero from "./components/Hero";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -18,6 +17,10 @@ const router = createBrowserRouter([
       {
         index: true,
         element: <Home />,
+      },
+      {
+        path: "/home",
+        element: <Hero />,
       },
       {
         path: "/about",

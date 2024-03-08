@@ -1,5 +1,6 @@
 import React from "react";
 import Profile from "../img/profile.png";
+import { TypeAnimation } from "react-type-animation";
 export default function Hero() {
   return (
     <>
@@ -9,11 +10,26 @@ export default function Hero() {
           <div className="row">
             <div className="home-info padd-15">
               <h3 className="hello">
-                Hello, my name is{" "}
+                Hello, my name is
                 <span className="owner-name">Ye Zaw Htet</span>
               </h3>
               <h3 className="my-profession">
-                I' m a <span className="typing">Web Developer</span>
+                <TypeAnimation
+                  sequence={[
+                    // Same substring at the start will only be typed out once, initially
+                    "I'm Junior Web Developer",
+                    1000, 
+                    "I'm  Frondend Developer",
+                    1000,
+                    "I'm  Backend Developer",
+                    1000,
+                    "I'm  Web Designer",
+                    1000,
+                  ]}
+                  wrapper="span"
+                  speed={10}
+                  repeat={Infinity}
+                />
               </h3>
               <p>
                 I had Studied at NVL University and got 2 Diploma and

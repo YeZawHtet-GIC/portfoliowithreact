@@ -1,5 +1,8 @@
 // Projects.js
 import React from "react";
+//custom css
+import "../css/projects.css";
+//images
 import Tutor from "../img/tutor.PNG";
 import Tutor1 from "../img/tutor1.PNG";
 import Travel from "../img/travelling_register.PNG";
@@ -17,29 +20,29 @@ import Pos3 from "../img/pos-sale-list-page.PNG";
 function Projects() {
   return (
     <>
-      <section class="portfolio section" id="portfolio">
-        <div class="container">
-          <div class="row">
-            <div class="section-title padd-15">
+      <section className="portfolio section" id="portfolio">
+        <div className="container">
+          <div className="row">
+            <div className="section-title padd-15">
               <h2>Portfolio</h2>
             </div>
           </div>
-          <div class="row">
-            <div class="portfolio-heading">
+          <div className="row">
+            <div className="portfolio-heading">
               <h2>My last Projects :</h2>
             </div>
           </div>
-          <div class="portfolio-heading">
+          <div className="portfolio-heading">
             <h4>Tutor Finding System Website</h4>
           </div>
-          <div class="row" style={{ borderRadius: "20px" }}>
+          <div className="row" style={{ borderRadius: "20px" }}>
             {/* <!--====== portfolio item start ======--> */}
             <div
-              class="portfolio item padd-15 col-sm-4"
+              className="portfolio item padd-15 col-sm-4"
               style={{ paddingTop: "10px" }}
             >
-              <div class="portfolio-item-inner shadow-dark">
-                <div class="portfolio-img">
+              <div className="portfolio-item-inner shadow-dark">
+                <div className="portfolio-img">
                   <img
                     style={{ minHeight: "20vh", maxWidth: "30vw" }}
                     src={Tutor}
@@ -51,11 +54,11 @@ function Projects() {
             {/* <!--====== portfolio item End ======--> */}
             {/* <!--====== portfolio item start ======--> */}
             <div
-              class="portfolio item padd-15 col-sm-4"
+              className="portfolio item padd-15 col-sm-4"
               style={{ paddingTop: "10px" }}
             >
-              <div class="portfolio-item-inner shadow-dark">
-                <div class="portfolio-img">
+              <div className="portfolio-item-inner shadow-dark">
+                <div className="portfolio-img">
                   <img
                     style={{ minHeight: "20vh", maxWidth: "30vw" }}
                     src={Tutor1}
@@ -67,11 +70,11 @@ function Projects() {
             {/* <!--====== portfolio item End ======--> */}
             {/* <!--====== portfolio item start ======--> */}
             <div
-              class="portfolio item padd-15 col-sm-4"
+              className="portfolio item padd-15 col-sm-4"
               style={{ paddingTop: "10px", marginBottom: "20px" }}
             >
-              <div class="portfolio-item-inner shadow-dark">
-                <div class="portfolio-img">
+              <div className="portfolio-item-inner shadow-dark">
+                <div className="portfolio-img">
                   <img
                     style={{ minHeight: "20vh", maxWidth: "30vw" }}
                     src={Tutor}
@@ -83,11 +86,11 @@ function Projects() {
             {/* <!--====== portfolio item End ======--> */}
             {/* <!--====== portfolio item start ======--> */}
             <div
-              class="portfolio item padd-15 col-sm-4"
+              className="portfolio item padd-15 col-sm-4"
               style={{ paddingTop: "10px" }}
             >
-              <div class="portfolio-item-inner shadow-dark">
-                <div class="portfolio-img">
+              <div className="portfolio-item-inner shadow-dark">
+                <div className="portfolio-img">
                   <img
                     style={{ minHeight: "20vh", maxWidth: "30vw" }}
                     src={Tutor1}
@@ -100,17 +103,17 @@ function Projects() {
           </div>
           {/* <!-- Website 2 --> */}
           <hr style={{ margin: "30px 0" }} />
-          <div class="portfolio-heading">
+          <div className="portfolio-heading">
             <h4>Travelling Website</h4>
           </div>
-          <div class="row" style={{ borderRadius: "20px" }}>
+          <div className="row" style={{ borderRadius: "20px" }}>
             {/* <!--====== portfolio item start ======--> */}
             <div
-              class="portfolio item padd-15 col-sm-4"
+              className="portfolio item padd-15 col-sm-4"
               style={{ paddingTop: "10px" }}
             >
-              <div class="portfolio-item-inner shadow-dark">
-                <div class="portfolio-img">
+              <div className="portfolio-item-inner shadow-dark">
+                <div className="portfolio-img">
                   <img
                     style={{ minHeight: "20vh", maxWidth: "30vw" }}
                     src={Travel}
@@ -122,11 +125,11 @@ function Projects() {
             {/* <!--====== portfolio item End ======--> */}
             {/* <!--====== portfolio item start ======--> */}
             <div
-              class="portfolio item padd-15 col-sm-4"
+              className="portfolio item padd-15 col-sm-4"
               style={{ paddingTop: "10px" }}
             >
-              <div class="portfolio-item-inner shadow-dark">
-                <div class="portfolio-img">
+              <div className="portfolio-item-inner shadow-dark">
+                <div className="portfolio-img">
                   <img
                     style={{ minHeight: "20vh", maxWidth: "30vw" }}
                     src={Travel1}
@@ -138,11 +141,11 @@ function Projects() {
             {/* <!--====== portfolio item End ======--> */}
             {/* <!--====== portfolio item start ======--> */}
             <div
-              class="portfolio item padd-15 col-sm-4"
+              className="portfolio item padd-15 col-sm-4"
               style={{ paddingTop: "10px", marginBottom: "20px" }}
             >
-              <div class="portfolio-item-inner shadow-dark">
-                <div class="portfolio-img">
+              <div className="portfolio-item-inner shadow-dark">
+                <div className="portfolio-img">
                   <img
                     style={{ minHeight: "20vh", maxWidth: "30vw" }}
                     src={Travel2}
@@ -154,11 +157,11 @@ function Projects() {
             {/* <!--====== portfolio item End ======--> */}
             {/* <!--====== portfolio item start ======--> */}
             <div
-              class="portfolio item padd-15 col-sm-4"
+              className="portfolio item padd-15 col-sm-4"
               style={{ paddingTop: "10px" }}
             >
-              <div class="portfolio-item-inner shadow-dark">
-                <div class="portfolio-img">
+              <div className="portfolio-item-inner shadow-dark">
+                <div className="portfolio-img">
                   <img
                     style={{ minHeight: "20vh", maxWidth: "30vw" }}
                     src={Travel3}
@@ -172,17 +175,17 @@ function Projects() {
           {/* <!-- Website 2 --> */}
           {/* <!-- Website 3 --> */}
           <hr style={{ margin: "30px 0" }} />
-          <div class="portfolio-heading">
+          <div className="portfolio-heading">
             <h4>Hacking Training Website</h4>
           </div>
-          <div class="row" style={{ borderRadius: "20px" }}>
+          <div className="row" style={{ borderRadius: "20px" }}>
             {/* <!--====== portfolio item start ======--> */}
             <div
-              class="portfolio item padd-15 col-sm-4"
+              className="portfolio item padd-15 col-sm-4"
               style={{ paddingTop: "10px" }}
             >
-              <div class="portfolio-item-inner shadow-dark">
-                <div class="portfolio-img">
+              <div className="portfolio-item-inner shadow-dark">
+                <div className="portfolio-img">
                   <img
                     style={{ minHeight: "20vh", maxWidth: "30vw" }}
                     src={Cyber}
@@ -195,11 +198,11 @@ function Projects() {
             {/* <!--====== portfolio item End ======--> */}
             {/* <!--====== portfolio item start ======--> */}
             <div
-              class="portfolio item padd-15 col-sm-4"
+              className="portfolio item padd-15 col-sm-4"
               style={{ paddingTop: "10px" }}
             >
-              <div class="portfolio-item-inner shadow-dark">
-                <div class="portfolio-img">
+              <div className="portfolio-item-inner shadow-dark">
+                <div className="portfolio-img">
                   <img
                     style={{ minHeight: "20vh", maxWidth: "30vw" }}
                     src={Cyber1}
@@ -212,11 +215,11 @@ function Projects() {
             {/* <!--====== portfolio item End ======--> */}
             {/* <!--====== portfolio item start ======--> */}
             <div
-              class="portfolio item padd-15 col-sm-4"
+              className="portfolio item padd-15 col-sm-4"
               style={{ paddingTop: "10px", marginBottom: "20px" }}
             >
-              <div class="portfolio-item-inner shadow-dark">
-                <div class="portfolio-img">
+              <div className="portfolio-item-inner shadow-dark">
+                <div className="portfolio-img">
                   <img
                     style={{ minHeight: "20vh", maxWidth: "30vw" }}
                     src={Cyber2}
@@ -229,11 +232,11 @@ function Projects() {
             {/* <!--====== portfolio item End ======--> */}
             {/* <!--====== portfolio item start ======--> */}
             <div
-              class="portfolio item padd-15 col-sm-4"
+              className="portfolio item padd-15 col-sm-4"
               style={{ paddingTop: "10px" }}
             >
-              <div class="portfolio-item-inner shadow-dark">
-                <div class="portfolio-img">
+              <div className="portfolio-item-inner shadow-dark">
+                <div className="portfolio-img">
                   <img
                     style={{ minHeight: "20vh", maxWidth: "30vw" }}
                     src={Cyber3}
@@ -248,17 +251,17 @@ function Projects() {
           {/* <!-- Website 3 --> */}
           {/* <!-- Windows Forms App --> */}
           <hr style={{ margin: "30px 0" }} />
-          <div class="portfolio-heading">
+          <div className="portfolio-heading">
             <h4>PhoneHub POS Windows Forms App</h4>
           </div>
-          <div class="row" style={{ borderRadius: "20px" }}>
+          <div className="row" style={{ borderRadius: "20px" }}>
             {/* <!--====== portfolio item start ======--> */}
             <div
-              class="portfolio item padd-15 col-sm-4"
+              className="portfolio item padd-15 col-sm-4"
               style={{ paddingTop: "10px" }}
             >
-              <div class="portfolio-item-inner shadow-dark">
-                <div class="portfolio-img">
+              <div className="portfolio-item-inner shadow-dark">
+                <div className="portfolio-img">
                   <img
                     style={{ minHeight: "20vh", maxWidth: "30vw" }}
                     src={Pos}
@@ -271,11 +274,11 @@ function Projects() {
             {/* <!--====== portfolio item End ======--> */}
             {/* <!--====== portfolio item start ======--> */}
             <div
-              class="portfolio item padd-15 col-sm-4"
+              className="portfolio item padd-15 col-sm-4"
               style={{ paddingTop: "10px" }}
             >
-              <div class="portfolio-item-inner shadow-dark">
-                <div class="portfolio-img">
+              <div className="portfolio-item-inner shadow-dark">
+                <div className="portfolio-img">
                   <img
                     style={{ minHeight: "20vh", maxWidth: "30vw" }}
                     src={Pos1}
@@ -288,11 +291,11 @@ function Projects() {
             {/* <!--====== portfolio item End ======--> */}
             {/* <!--====== portfolio item start ======--> */}
             <div
-              class="portfolio item padd-15 col-sm-4"
+              className="portfolio item padd-15 col-sm-4"
               style={{ paddingTop: "10px", marginBottom: "20px" }}
             >
-              <div class="portfolio-item-inner shadow-dark">
-                <div class="portfolio-img">
+              <div className="portfolio-item-inner shadow-dark">
+                <div className="portfolio-img">
                   <img
                     style={{ minHeight: "20vh", maxWidth: "30vw" }}
                     src={Pos2}
@@ -305,11 +308,11 @@ function Projects() {
             {/* <!--====== portfolio item End ======--> */}
             {/* <!--====== portfolio item start ======--> */}
             <div
-              class="portfolio item padd-15 col-sm-4"
+              className="portfolio item padd-15 col-sm-4"
               style={{ paddingTop: "10px" }}
             >
-              <div class="portfolio-item-inner shadow-dark">
-                <div class="portfolio-img">
+              <div className="portfolio-item-inner shadow-dark">
+                <div className="portfolio-img">
                   <img
                     style={{ minHeight: "20vh", maxWidth: "30vw" }}
                     src={Pos3}
