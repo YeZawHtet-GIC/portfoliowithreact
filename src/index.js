@@ -1,6 +1,5 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import "./index.css";
 import App from "./App";
 //bootstrap
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -8,10 +7,9 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import About from "./components/About";
 import Contact from "./components/Contact";
-import Skills from "./components/Skills";
 import Projects from "./components/Projects";
+import Service from "./components/Service";
 import Home from "./components/Home";
-
 const router = createBrowserRouter([
   {
     path: "/",
@@ -38,8 +36,8 @@ const router = createBrowserRouter([
         element: <Projects />,
       },
       {
-        path: "/skills",
-        element: <Skills />,
+        path: "/services",
+        element: <Service />,
       },
     ],
   },

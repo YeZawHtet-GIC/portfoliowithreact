@@ -1,17 +1,14 @@
 import React from "react";
-import Header from "./Header";
 import Projects from "./Projects";
 import About from "./About";
-import Skills from "./Skills";
 import Contact from "./Contact";
-import Aside from "./Aside";
+import Hero from "./Hero";
 
 export default function Home() {
   return (
-    <div>
-      <Aside />
+    <div className="main-content">
+      <Hero />
       <About />
-      <Skills />
       <Projects />
       <Contact />
     </div>

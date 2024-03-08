@@ -1,37 +1,49 @@
-import React from 'react'
+import React from "react";
 
 export default function Aside() {
   return (
     <>
       {/* <!--====== Aside Start ======--> */}
-    <div class="aside">
-      <div class="logo">
-        <a href="#"><span>D</span>anny</a>
+      <div className="aside">
+        <div className="logo">
+          <a href="#">
+            <span>D</span>anny
+          </a>
+        </div>
+        <ul className="nav">
+          <li className="lihome" data-section="home">
+            <a href="#home" className="nav-link active">
+              <i className="fa fa-home"></i>Home
+            </a>
+          </li>
+          <li className="liabout" data-section="about">
+            <a href="#about" className="nav-link">
+              <i className="fa fa-user"></i>About
+            </a>
+          </li>
+          <li className="liservices" data-section="services">
+            <a href="#services" className="nav-link">
+              <i className="fa fa-list"></i>Services
+            </a>
+          </li>
+          <li className="liportfolio" data-section="portfolio">
+            <a href="#portfolio" className="nav-link">
+              <i className="fa fa-briefcase"></i>Portfolio
+            </a>
+          </li>
+          <li className="licontact" data-section="contact">
+            <a href="#contact" className="nav-link">
+              <i className="fa fa-comments"></i>Contact
+            </a>
+          </li>
+        </ul>
       </div>
-      <ul class="nav">
-        <li class="lihome" data-section="home">
-          <a href="#home" class="nav-link active"><i class="fa fa-home"></i>Home</a>
-        </li>
-        <li class="liabout" data-section="about">
-          <a href="#about" class="nav-link"><i class="fa fa-user"></i>About</a>
-        </li>
-        <li class="liservices" data-section="services">
-          <a href="#services" class="nav-link"><i class="fa fa-list"></i>Services</a>
-        </li>
-        <li class="liportfolio" data-section="portfolio">
-          <a href="#portfolio" class="nav-link"><i class="fa fa-briefcase"></i>Portfolio</a>
-        </li>
-        <li class="licontact" data-section="contact">
-          <a href="#contact" class="nav-link"><i class="fa fa-comments"></i>Contact</a>
-        </li>
-      </ul>
-    </div>
-    <div class="nav-toggler">
-      <div class="bar"></div>
-      <div class="bar"></div>
-      <div class="bar"></div>
-    </div>
-    {/* <!--====== Aside End ======--> */}
+      <div className="nav-toggler">
+        <div className="bar"></div>
+        <div className="bar"></div>
+        <div className="bar"></div>
+      </div>
+      {/* <!--====== Aside End ======--> */}
     </>
-  )
+  );
 }
