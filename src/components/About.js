@@ -40,7 +40,7 @@ function About() {
                   </div>
                   <div className="info-item padd-15">
                     <p>
-                      Website :{" "}
+                      Website :
                       <span>
                         <a href="https://portfoliobyyzh.netlify.app/">
                           portfoliobyyzh
